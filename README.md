@@ -1,0 +1,6 @@
+- **Part 1:** Reviewing HTML and CSS
+- **Part 2:** Learning about CSS conditional styles
+- **Part 3**
+  - Learning about the CSS `transition` property
+  - Learning about the CSS `animation` property, which is just a fancier alternative to `transition`
+- If there's time, maybe touching on next steps, like JavaScript animation

@@ -1,0 +1,98 @@
+#body {
+  /* Permanent style */
+  font-size: x-large;
+}
+
+#link {
+  /* Non-hover style */
+  color: orange;
+}
+
+#link:hover {
+  /* Hover styles */
+  background-color: orange;
+  color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     Box                                    */
+/* -------------------------------------------------------------------------- */
+
+#box {
+  /* Permanent styles */
+  height: 100px;
+  width: 100px;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: cyan;
+  background-color: blue;
+}
+
+#box:hover {
+  /* Hover styles */
+  transform: translateX(20px);
+  opacity: 50%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Button                                   */
+/* -------------------------------------------------------------------------- */
+
+#button {
+  /* Permanent styles */
+  padding: 20px;
+  color: white;
+  border: none;
+  font-size: medium;
+
+  /* Non-hover style */
+  background-color: green;
+}
+
+#button:hover {
+  /* Hover-specific styles */
+  background-color: yellow;
+  color: black;
+}
+
+#button:active {
+  /* Active-specific styles */
+  background-color: red;
+  color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Image one                                 */
+/* -------------------------------------------------------------------------- */
+
+#image-one {
+  /* Permanent styles */
+  width: 300px;
+  height: 300px;
+}
+
+#image-one:hover {
+  /* Hover specific styles */
+  transform: rotate(45deg) scale(1.3);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Image two                                 */
+/* -------------------------------------------------------------------------- */
+
+#image-two {
+  /* Permanent styles */
+  width: 300px;
+  height: 300px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Rainbow box                                */
+/* -------------------------------------------------------------------------- */
+
+#rainbow-box {
+  /* Permanent styles */
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+}

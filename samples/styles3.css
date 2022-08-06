@@ -1,0 +1,210 @@
+#body {
+  /* Permanent style */
+  font-size: x-large;
+}
+
+#link {
+  /* Non-hover style */
+  color: orange;
+
+  /* Transition rules */
+  transition-duration: 250ms;
+  transition-property: color background-color;
+  transition-timing-function: ease-in-out;
+}
+
+#link:hover {
+  /* Hover styles */
+  background-color: orange;
+  color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     Box                                    */
+/* -------------------------------------------------------------------------- */
+
+#box {
+  /* Permanent styles */
+  height: 100px;
+  width: 100px;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: cyan;
+  background-color: blue;
+
+  /* Transition rules */
+  transition-duration: 250ms;
+  transition-delay: 100ms;
+  transition-property: color background-color;
+  transition-timing-function: ease-in-out;
+}
+
+#box:hover {
+  /* Hover styles */
+  transform: translateX(20px);
+  opacity: 50%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Button                                   */
+/* -------------------------------------------------------------------------- */
+
+#button {
+  /* Permanent styles */
+  padding: 20px;
+  color: white;
+  border: none;
+  font-size: medium;
+
+  /* Non-hover style */
+  background-color: green;
+
+  /* Transition rules */
+  transition-duration: 150ms;
+  transition-property: color background-color;
+  transition-timing-function: ease-in-out;
+}
+
+#button:hover {
+  /* Hover-specific styles */
+  background-color: yellow;
+  color: black;
+}
+
+#button:active {
+  /* Active-specific styles */
+  background-color: red;
+  color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Image one                                 */
+/* -------------------------------------------------------------------------- */
+
+#image-one {
+  /* Permanent styles */
+  width: 300px;
+  height: 300px;
+
+  /* Transition rules */
+  transition-duration: 250ms;
+  transition-property: transform;
+  transition-timing-function: ease-in;
+}
+
+#image-one:hover {
+  /* Hover specific styles */
+  transform: rotate(45deg) scale(1.3);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Image two                                 */
+/* -------------------------------------------------------------------------- */
+
+#image-two {
+  /* Permanent styles */
+  width: 300px;
+  height: 300px;
+
+  /* Animation rules */
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+#image-two:hover {
+  animation-play-state: paused;
+}
+
+/* Animation */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Rainbow box                                */
+/* -------------------------------------------------------------------------- */
+
+#rainbow-box {
+  /* Permanent styles */
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+
+  /* Animation rules */
+  animation-name: rainbow;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+/* Animation */
+
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+
+  10% {
+    background-color: orange;
+  }
+
+  20% {
+    background-color: yellow;
+  }
+
+  30% {
+    background-color: green;
+  }
+
+  40% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: pink;
+  }
+
+  60% {
+    background-color: blue;
+  }
+
+  70% {
+    background-color: green;
+  }
+
+  80% {
+    background-color: yellow;
+  }
+
+  90% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
